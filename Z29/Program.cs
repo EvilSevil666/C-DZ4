@@ -14,10 +14,8 @@ for (int i = 0; i < randomArray.Length; i++)
     Console.Write(randomArray[i] + " ");
 }
 
-
-// Функция ввода
 int ReadInt(string message)
 {
     Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
+    return Convert.ToInt32(Console.ReadLine()!);
 }
