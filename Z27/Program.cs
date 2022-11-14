@@ -6,8 +6,9 @@
 9012 -> 12
 */
 
+Console.Clear();
 Console.WriteLine("Программа которая принимает на вход число и выдаёт сумму цифр в числе.");
-int number = ReadInt("Введите число: ");
+int number = ReadInt("Введите число:");
 int len = NumberLen(number);
 SumNumbers(number, len);
 

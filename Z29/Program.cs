@@ -4,13 +4,16 @@
 5 -> [1, 2, 5, 7, 19]
 3 -> [6, 1, 33]
 */
+
+Console.Clear();
 Console.WriteLine("Программа которая задаёт массив из N элементов и выводит их на экран.");
 int lenArray = ReadInt("Введите длинну массива: ");
 
 int[] randomArray = new int[lenArray];
+
 for (int i = 0; i < randomArray.Length; i++)
 {
-    randomArray[i] = new Random().Next(1,9);
+    randomArray[i] = new Random()!.Next(1,9);
     Console.Write(randomArray[i] + " ");
 }
 
